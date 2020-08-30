@@ -1,56 +1,65 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Allie Knepp</title>
-    <base target="_self">
-    <meta name="description" content="A Bootstrap 4 carousel that advances one at a time. This example shows 3 slides at one, and moves one slide at a time." />
+    <base target="_self"><!--targets everything to this page? doestn opwn links in  new tab-->
     <meta name="google" value="notranslate">
-    <link rel="shortcut icon" href="/images/cp_ico.png">
+    <link rel="shortcut icon" href="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\logo.png"> <!-- favicon-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\Allie\Documents\GitHub\aknepp.github.io\styles\bootstrap.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script>
-$('.carousel').carousel()
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
 
-</script>
+        $('.carousel').carousel()
+
+      
+        
+    </script>
 
 </head>
 <body>
+    <div class="container-fluid mb-lg-5" style="position: absolute; left: 0; transform: rotate(-180deg); height: 80%">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\Header.png" />
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand"><img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\logo.png"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Works
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Web Development</a>
-                <a class="dropdown-item" href="#">Graphic Design</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Works
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#web">Web Development</a>
+                        <a class="dropdown-item" href="#graphicDesign">Graphic Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-    <div class="container-fluid bg-secondary p-5"> <!--add a custom color -->
+    </nav>
+
+    <div class="container-fluid m-0 bg">
         <div class="row mt-5 pt-5">
             <div class="col-1"></div>
             <div class="col-6">
@@ -70,75 +79,119 @@ $('.carousel').carousel()
             </div>
         </div>
     </div>
-    
-        <div class="row mt-5">
-            <div class="col-1"></div>
-            <div class="col-6">
-                <h2>My Work</h2>
-            </div>
+    <!--this is the about section-->
+
+    <div class="mb-lg-5 p-5"></div>
+    <div class="m-3">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\paintstroke.png" style="position: absolute;" />
+    </div>
+
+    <div class="row mt-5" id="about">
+        <div class="col-1 mt-5"></div>
+        <div class="col-6 mt-5">
+            <h2>About</h2>
         </div>
-        <div class="row pt-3">
-            <div class="col-1"></div>
-            <h3><strong>Web Pages</strong></h3>
+    </div>
+
+    <div class="row pb-5">
+        <div class="col-1"></div>
+        <div class="col-5 mt-4">
+            <h3>Hello, My name is Allie Knepp</h3>
+            <h4 class="p-4">
+                I am a senior studying Web Programming & Design. I have a passion for creating fun and functional websites. I enjoy the creativity of front end development and the challenge of back end.
+
+                On my most recent project I got to advance my knowledge in C# and SQL. I created a new system that allowed university advisors to edit and view student internship information.
+
+                I hope you enjoy exploring my work
+
+            </h4>
+            <h4>
+                ~ Allie
+
+            </h4>
         </div>
-
-        <div class="row">
-            <div class="col-1"></div>
-        
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
-
-            </div>
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
-
-            </div>
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
-
-            </div>
+        <div class="col-5">
+            <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\headshot.jpg" style="width: 95%;" />
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-1"></div>
-            <h3><strong>Graphic Design</strong></h3>
+    <div class="ml-3">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\paintstroke.png" style="position: absolute;" />
+    </div>
+    <div class="row mt-5" id="work">
+        <div class="col-1"></div>
+        <div class="col-6">
+            <h2>My Work</h2>
         </div>
+    </div>
+    <div class="m-5">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\smallstroke.png" style="position: absolute; z-index: -1;" />
+    </div>
+    <div class="row mt-3" id="web">
+        <div class="col-1"></div>
+        <h3><strong>Web Pages</strong></h3>
+    </div>
 
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
+    <div class="row">
+        <div class="col-1"></div>
 
-            </div>
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 75%;">
+            <h3><strong>Internship - CEM</strong></h3>
 
-            </div>
-            <div class="card p-3 m-3 shadow col-3">
-                <img src="images/bigtreessite.JPG" style="height: 75%;">
-                <h3><strong>Internship - CEM</strong></h3>
-
-            </div>
         </div>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 75%;">
+            <h3><strong>Internship - CEM</strong></h3>
 
-        <div class="row mt-5">
-            <div class="col-1"></div>
-            <div class="col-6">
-                <h2>About</h2>
-            </div>
         </div>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 75%;">
+            <h3><strong>Internship - CEM</strong></h3>
 
-        <div class="row mt-5">
-            <div class="col-1"></div>
-            <div class="col-6">
-                <h2>Contact</h2>
-            </div>
         </div>
+    </div>
+
+    <div class="m-5">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\smallstroke.png" style="position: absolute; z-index: -1;" />
+    </div>
+    <div class="row" id="graphicDesign">
+        <div class="col-1"></div>
+        <h3><strong>Graphic Design</strong></h3>
+    </div>
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 50%;">
+            <h3><strong>Internship - CEM</strong></h3>
+
+        </div>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 50%;">
+            <h3><strong>Internship - CEM</strong></h3>
+
+        </div>
+        <div class="card p-3 m-3 shadow col-3">
+            <img src="images/bigtreessite.JPG" style="height: 50%;">
+            <h3><strong>Internship - CEM</strong></h3>
+
+        </div>
+    </div>
+
+
+    <div class="ml-4">
+        <img src="C:\Users\Allie\Documents\GitHub\aknepp.github.io\images\paintstroke.png" style="position: absolute;" />
+    </div>
+    <div class="row mt-5" id="contact">
+        <div class="col-1"></div>
+        <div class="col-6">
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <div>
+
+    </div>
 
 </body>
 
