@@ -73,7 +73,7 @@
     </nav>
     <div class="row mt-5 pt-5">
         <div class="col-lg-5 mr-5" style="">
-            <img src="images\seattle.JPG" />
+            <img src="images\seattle.JPG" class=""/>
         </div>
         <div class="col-lg-6 col-md-8 col-sm-10 mt-5">
             <div class="container-fluid m-0 bg">
@@ -235,7 +235,7 @@
                 my group projects...
             </p>
             <p class="font-italic">
-                Adobe Illustrator, Photoshop
+                Adobe Fresco, Illustrator, Photoshop
             </p>
             <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#logoModal">
                 click to view
@@ -266,8 +266,31 @@
             <h2>Contact</h2>
         </div>
     </div>
-    <div>
-        <form>
+    <div class="card col-lg-8 col-md-10 col-sm-11 p-5 m-5">
+        <h3><strong>Interested in working with me?</strong></h3>
+        <p class="font-italic">Let's chat...</p>
+        <form action="https://formspree.io/xwkrgqno"  method="POST">
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <input type="text" class="form-control" id="firstNameInput" name="firstNameInput" placeholder="FirstName " required>
+                </div>
+                <div class="col-6 mb-4">
+                    <input type="text" class="form-control" id="lastNameInput" name="lastNameInput" placeholder="LastName" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="youremail@email.com" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <textarea type="text" class="form-control" id="messageInput" name="messageInput" placeholder="What would you like to work on next?" rows="5" required></textarea>
+                </div>
+            </div>
+            <button class="btn btn-light font-italic col-4" type="submit">
+                submit
+            </button>
         </form>
     </div>
 
