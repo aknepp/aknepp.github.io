@@ -49,20 +49,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto smooth-scroll">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#work" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Works
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#web">Web Development</a>
-                        <a class="dropdown-item" href="#graphicDesign">Graphic Design</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
                 </li>
+                <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#work" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Works
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#web">Web Development</a>
+            <a class="dropdown-item" href="#graphicDesign">Graphic Design</a>
+        </div>
+    </li>-->
 
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -73,20 +75,15 @@
             </ul>
         </div>
     </nav>
-    <!--<div class="col-lg-5" style="">
-        <img src="images\seattleimg.jpg" class="" />
-    </div>-->
+    
     <div class="row">
         <div class="col-lg-6" style="z-index: 1; position: absolute">
-            <img src="images\seattleimg.jpg" class="img-fluid" />
+            <img src="images\seattleimg.jpg" class="img-fluid"/>
         </div>
-
         <div class="col-lg-5 m-0" style="z-index: -1; position: absolute; left: 40%;">
-            <img src="images\Seattlepaint.jpg" class="" />
+            <img src="images\Seattlepaint.jpg" class=""/>
         </div>
 
-
-        <!--<div class="row ml-lg-5 ">-->
         <div class="col-lg-5"></div>
         <div class="col-lg-6 col-md-8 col-sm-10 mt-5" style="z-index: 1; ">
             <div class="container-fluid m-0 bg">
@@ -120,6 +117,7 @@
         <img src="images\paintstroke.png" style="position: absolute;" />
     </div>
 
+    <!-- The about section -->
     <div class="row mt-5">
         <div class="col-1 mt-5"></div>
         <div class="col-6 mt-5">
@@ -146,13 +144,15 @@
         </div>
         <div class="col-lg-5 col-sm-8 m-5">
             <img src="images\headshot.jpg" style="width: 95%;" />
+            <div id="work"></div>
         </div>
     </div>
 
+    <!-- The projects/ work section -->
     <div class="ml-3">
         <img src="images\paintstroke.png" style="position: absolute;" />
     </div>
-    <div class="row mt-5" id="work">
+    <div class="row mt-5">
         <div class="col-1"></div>
         <div class="col-6">
             <h2>My Work</h2>
@@ -200,7 +200,6 @@
             </button>
         </div>
 
-        <!--<div class="col-0 col-md-1"></div>-->
         <div class="card p-3 m-3 shadow col-lg-3 col-md-5">
             <img src="images/cover_train.png" class="img-fluid mb-3" />
             <h3><strong>Purdue Reamer Club</strong></h3>
@@ -256,7 +255,6 @@
                 click to view
             </button>
         </div>
-        <!--<div class="col-md-1"></div>-->
         <div class="card p-3 m-3 shadow col-lg-3 col-md-5">
             <img src="images/cover_digital.jpg" class="img-fluid mb-3" />
             <h3><strong>Digital Illustration</strong></h3>
@@ -314,6 +312,9 @@
         </form>
     </div>
 
+
+
+
     <!-- MODALS -->
     <div class="modal fade bd-example-modal-lg" id="internshipModal" abindex="-1" role="dialog" aria-labelledby="cemInternshipModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -350,7 +351,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content p-5">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-lg-6 col-sm-12">
                         <h3><strong>Calaveras Big Trees</strong></h3>
                         <p class="font-weight-light">
                             To enhance and display newly developed CSS and Javascript styling capabilities, my group and I created a mobile friendly
@@ -363,6 +364,20 @@
                         <p class="font-italic">
                             Javascript, jQuery, HTML, CSS
                         </p>
+                        <img src="images\bigtrees3.JPG" class="img-fluid m-2 shadow" />
+
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\bigtrees1.JPG" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\bigtrees2.JPG" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +389,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content p-5">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-lg-6 col-sm-12">
                         <h3><strong>Purdue Reamer Club</strong></h3>
                         <p class="font-weight-light">
                             The Purdue Reamer Club is a student run organization that was in need of a new website that could allow users to view
@@ -384,6 +399,25 @@
                         <p class="font-italic">
                             HTML, CSS, Javascript
                         </p>
+                        
+                        
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\reamer1.jpg" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\reamer2.jpg" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\reamer4.jpg" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -420,13 +454,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content p-5">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-lg-5 col-sm-10">
                         <h3><strong>Logos and Infographics </strong></h3>
                         <p class="font-weight-light">
                             Through my time at Purdue, I have had the opportunity to create infographics for my classes and Logos for my group projects…
                         </p>
                         <p class="font-weight-light">
-                            Most recently I designed the Logo for me Senior Design group website. Find us at our website HANKdevleopment.com
+                            Most recently I designed the Logos and favicon for my Senior Design group website. Find us at our website
+                            <a href="https://hankdevelopment.com/" target="_blank">HANKdevleopment.com</a>
                         </p>
                         <p class="font-weight-light">
                             My infographics are a product of class assignments and projects. On two of my projects, I received recognition as the top
@@ -436,6 +471,35 @@
                             Adobe Fresco, Illustrator, Photoshop
                         </p>
                     </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="images\cover_logo.png" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images\logo_peach.png" class="img-fluid m-2 shadow" />
+                            </div>
+                            <div class="col-6">
+                                <img src="images\logo_favicon.png" class="img-fluid m-2 shadow" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="images\info2.jpg" class="img-fluid m-2 shadow" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images\info1.jpg" class="img-fluid m-2 shadow" />
+                        </div>
+                        <div class="col-6">
+                            <img src="images\info3.jpg" class="img-fluid m-2 shadow" />
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
