@@ -8,9 +8,8 @@
     <base target="_self"><!--targets everything to this page? doestn opwn links in  new tab-->
     <meta name="google" value="notranslate">
     <link rel="shortcut icon" href="images\logo.png"> <!-- favicon-->
-    <link rel="stylesheet" type="text/css" href="styles\style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles\bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -32,11 +31,14 @@
         });
 
 
-        
+
     </script>
 
 </head>
 <body>
+    <script src="scripts\bootstrap.js"></script>
+
+
     <div class="container-fluid mb-lg-5" id="home"></div>
 
     <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
@@ -47,7 +49,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto smooth-scroll">
                 <li class="nav-item active">
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -74,18 +76,19 @@
     <!--<div class="col-lg-5" style="">
         <img src="images\seattleimg.jpg" class="" />
     </div>-->
+    <div class="row">
+        <div class="col-lg-6" style="z-index: 1; position: absolute">
+            <img src="images\seattleimg.jpg" class="img-fluid" />
+        </div>
 
-    <!--<div class="col-lg-5" style=" position:absolute;">
-        <img src="images\seattleimg.jpg" class="img-fluid" />
-    </div>-->
-
-    <div class="col-lg-5" style="z-index: -1; position:absolute;">
-        <img src="images\Seattlepaint.jpg" class="" />
-    </div>
+        <div class="col-lg-5 m-0" style="z-index: -1; position: absolute; left: 40%;">
+            <img src="images\Seattlepaint.jpg" class="" />
+        </div>
 
 
-    <div class="row ml-lg-5 ">
-        <div class="col-lg-6 col-md-8 col-sm-10 mt-5" style="z-index: 1">
+        <!--<div class="row ml-lg-5 ">-->
+        <div class="col-lg-5"></div>
+        <div class="col-lg-6 col-md-8 col-sm-10 mt-5" style="z-index: 1; ">
             <div class="container-fluid m-0 bg">
                 <div class="row mt-5 pt-5">
                     <div class="col-3"></div>
@@ -108,6 +111,8 @@
             </div>
         </div>
     </div>
+
+
     <!--this is the about section-->
 
     <div class="mb-lg-5 p-5" id="about"></div>
@@ -267,6 +272,11 @@
             </button>
         </div>
     </div>
+
+
+
+    <!-- Contact section -->
+
     <div class="ml-4">
         <img src="images\paintstroke.png" style="position: absolute; width:auto" />
     </div>
@@ -305,22 +315,146 @@
     </div>
 
     <!-- MODALS -->
-    <!-- Modal -->
-    <div class="modal fade" id="internshipModal" tabindex="-1" role="dialog" aria-labelledby="CEMInternship" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="CEMinternship">Internship - CEM</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="modal fade bd-example-modal-lg" id="internshipModal" abindex="-1" role="dialog" aria-labelledby="cemInternshipModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Internship - CEM</strong></h3>
+                        <p class="font-weight-light">
+                            The Purdue University Construction Engineering Management department needed a new interface to manage student data regarding
+                            their internships that were completed through the program.
+                        </p>
+                        <p class="font-weight-light">
+                            I created a new system with C# and SQL to accommodate Advisors and Students through different user permissions. The students
+                            are able to access their own personal page where they can update their personal data and view recommended companies to apply
+                            to based on their location and industry preferences.
+                        </p>
+                        <p class="font-weight-light">
+                            The advisors serve as admins for the website. They can add and delete both students and companies as they enter and leave the
+                            CEM program. The advisors have full access to analyze the student and company data. An extra and interesting feature that was
+                            requested is that the students are able to write a review on their previous employer and the advisors could see the reviews on
+                            the company information pages.
+                        </p>
+                        <p class="font-italic">
+                            Javascript, HTML, C#, SQL, Bootstrap
+                        </p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    Hello
+            </div>
+        </div>
+    </div>
+
+    <!-- Calaveras Big trees Modal -->
+    <div class="modal fade bd-example-modal-lg" id="treesModal" abindex="-1" role="dialog" aria-labelledby="calaverasBigTreesModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Calaveras Big Trees</strong></h3>
+                        <p class="font-weight-light">
+                            To enhance and display newly developed CSS and Javascript styling capabilities, my group and I created a mobile friendly
+                            and interactive website displaying information about the Calaveras Big Trees State Park in Northern California.
+                        </p>
+                        <p class="font-weight-light">
+                            On this final project we decided to go the extra mile to include fun and beautiful interactions for a smooth user experience.
+                            The site included some simple facts about the park itself, but the site is meant to display our learnings and stylistic choices.
+                        </p>
+                        <p class="font-italic">
+                            Javascript, jQuery, HTML, CSS
+                        </p>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Purdue Reamer Club Modal -->
+    <div class="modal fade bd-example-modal-lg" id="trainModal" abindex="-1" role="dialog" aria-labelledby="purdueReamerClubModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Purdue Reamer Club</strong></h3>
+                        <p class="font-weight-light">
+                            The Purdue Reamer Club is a student run organization that was in need of a new website that could allow users to view
+                            upcoming events. To meet their needs, my group and I used HTML and CSS to design a simple site to display their public
+                            google calendar.
+                        </p>
+                        <p class="font-italic">
+                            HTML, CSS, Javascript
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Graphic Design Modals -->
+    <!-- CoRec Designs Modal -->
+    <div class="modal fade bd-example-modal-lg" id="corecModal" abindex="-1" role="dialog" aria-labelledby="purdueUniversityCorecModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Purdue University CoRec</strong></h3>
+                        <p class="font-weight-light">
+                            Since Fall of 2019, I have worked on various graphic design projects to be displayed in the Purdue University Recreational
+                            center. These graphics have been viewed by thousands of students on Digital screens and on the rec center’s social media presence.
+                        </p>
+                        <p class="font-weight-light">
+                            During my time with the Purdue CoRec, I have worked on many different campaigns spreading awareness of different programs,
+                            the importance of staying healthy, and important changes to hours during the holidays.
+                        </p>
+                        <p class="font-italic">
+                            Adobe Spark, Illustrator, Photoshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="modal fade bd-example-modal-lg" id="logoModal" abindex="-1" role="dialog" aria-labelledby="logoDesignModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Logos and Infographics </strong></h3>
+                        <p class="font-weight-light">
+                            Through my time at Purdue, I have had the opportunity to create infographics for my classes and Logos for my group projects…
+                        </p>
+                        <p class="font-weight-light">
+                            Most recently I designed the Logo for me Senior Design group website. Find us at our website HANKdevleopment.com
+                        </p>
+                        <p class="font-weight-light">
+                            My infographics are a product of class assignments and projects. On two of my projects, I received recognition as the top
+                            5 designers in the class.
+                        </p>
+                        <p class="font-italic">
+                            Adobe Fresco, Illustrator, Photoshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="modal fade bd-example-modal-lg" id="digitalModal" abindex="-1" role="dialog" aria-labelledby="digitalIllustrationModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h3><strong>Digital Illustration</strong></h3>
+                        <p class="font-weight-light">
+                            Digital Illustration comes as a small hobby of mine. Feel free to browse some sketches I have done while feeling inspired.
+                        </p>
+                        <p class="font-italic">
+                            Adobe Fresco, Illustrator, Photoshop
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
