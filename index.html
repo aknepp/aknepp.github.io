@@ -8,6 +8,7 @@
     <base target="_self"><!--targets everything to this page? doestn opwn links in  new tab-->
     <meta name="google" value="notranslate">
     <link rel="shortcut icon" href="images\logo.png"> <!-- favicon-->
+    <link rel="stylesheet" type="text/css" href="styles\style.css" />
     <link rel="stylesheet" type="text/css" href="styles\bootstrap.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -36,50 +37,51 @@
     <script src="scripts\bootstrap.js"></script>
 </head>
 <body>
-    
 
-    <div class="container-fluid mb-lg-5" id="home"></div>
-    <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
-        <a class="navbar-brand"><img src="images\logo.png"></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="mb-lg-5" id="home"></div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light shadow" >
+        <!-- this is the icon that appears when the nav is small -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <a class="navbar-brand" href="#home"><img src="images\logo.png" class="img-fluid"></a>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#work">Work</a>
-                </li>
-                <!--<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle " href="#work" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Works
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#web">Web Development</a>
-            <a class="dropdown-item" href="#graphicDesign">Graphic Design</a>
-        </div>
-    </li>-->
 
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
+
+
         </div>
     </nav>
-    
+   
+             
+
     <div class="row">
+
         <div class="col-lg-6" style="z-index: 1; position: absolute">
-            <img src="images\Seattleimg.jpg" class="img-fluid"/>
+            <img src="images\Seattleimg.jpg" class="img-fluid shadow" />
         </div>
-        <div class="col-lg-5 m-0" style="z-index: -1; position: absolute; left: 40%;">
-            <img src="images\Seattlepaint.jpg" class=""/>
+        <div class="col-lg-5" style="z-index: -1; position: absolute; left: 40%;">
+            <img src="images\Seattlepaint.jpg" class="" />
         </div>
 
         <div class="col-lg-5"></div>
@@ -141,7 +143,7 @@
             </h4>
         </div>
         <div class="col-lg-5 col-sm-8 m-5">
-            <img src="images\headshot.jpg" style="width: 95%;" />
+            <img src="images\headshot.jpg" class="img-fluid shadow" />
             <div id="work"></div>
         </div>
     </div>
@@ -224,7 +226,7 @@
 
     <div class="row">
         <div class="col-1"></div>
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5">
+        <div class="card p-3 m-3 mb-5 shadow col-lg-3 col-md-5">
             <img src="images/cover_corec.jpg" class="img-fluid mb-3">
             <h3><strong>Purdue University CoRec</strong></h3>
             <p class="font-weight-light">
@@ -239,7 +241,7 @@
                 click to view
             </button>
         </div>
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5">
+        <div class="card p-3 m-3 mb-5 shadow col-lg-3 col-md-5">
             <img src="images/cover_logo.png" class="img-fluid mb-3">
             <h3><strong>Infographics and Logos</strong></h3>
             <p class="font-weight-light">
@@ -253,7 +255,7 @@
                 click to view
             </button>
         </div>
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5">
+        <div class="card p-3 m-3 mb-5 shadow col-lg-3 col-md-5">
             <img src="images/cover_digital.jpg" class="img-fluid mb-3" />
             <h3><strong>Digital Illustration</strong></h3>
             <p class="font-weight-light">
@@ -326,7 +328,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-5 col-sm-12">
-                        
+
                         <p class="font-weight-light">
                             The Purdue University Construction Engineering Management department needed a new interface to manage student data regarding
                             their internships that were completed through the program.
@@ -476,7 +478,6 @@
     </div>
 
     <!-- Graphic Design Modals -->
-
     <!-- CoRec Designs Modal -->
     <div class="modal fade bd-example-modal-lg" id="corecModal" abindex="-1" role="dialog" aria-labelledby="purdueUniversityCorecModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
