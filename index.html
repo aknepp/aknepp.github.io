@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images\logo.png"> <!-- favicon-->
     <link rel="stylesheet" type="text/css" href="styles\style.css" />
     <link rel="stylesheet" type="text/css" href="styles\bootstrap.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vhl8fnw.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
@@ -76,54 +77,28 @@
         <div class="mb-5" id="home"></div>
     </div>
     
-
-
+    <!-- Header images -->
     <div class="row mt-5">
-        <div class="col-lg-5 col-sm-12 mt-lg-5 mt-sm-2 ml-5">
-            <img src="images\Seattleimg.jpg" class="img-fluid shadow" style="z-index: 1; " />
+        <div class="col-lg-5 col-sm-10 mt-lg-5 mt-sm-2 ml-lg-5">
+            <img src="images\Seattleimg.jpg" class="img-fluid shadow ml-5" />
         </div>
-        <div class="col-lg-6 col-md-8 col-sm-11 mt-5 ml-lg-1 ml-sm-5">
-            <div class="col-12">
-                <img src="images\Seattlepaint.jpg" class="" style="z-index: -2; position: absolute" />
-
-
-                <div class="row pt-5">
-
-                    <div class="col-2"></div>
-                    <div class="col-6">
-                        <h1 class="text" style="transform: scale(1.5)">.allieKnepp {</h1>
-                    </div>
-                </div>
-                <div class="row m-5">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-10 col-sm-12">
-                        <h2 class="text" style="transform: scale(1.1)">Web: Development, Design;</h2>
-                    </div>
-                </div>
-                <div class="row pb-5 mb-lg-5">
-                    <div class="col-2"></div>
-                    <div class="col-6">
-                        <h1 class="text" style="transform: scale(1.5)">}</h1>
-                    </div>
-                </div>
-            </div>
-
+        <div class="col-lg-5 col-md-8 col-sm-10 mt-5 ml-5">
+            <img src="images\painttext.png" class="img-fluid" />
         </div>
     </div>
 
 
-    <!--this is the about section-->
+    <!--About Section-->
 
     <div class="mb-lg-5 p-5" id="about"></div>
-    <div class="ml-lg-3 ml-sm-1">
+    <div class="ml-lg-3 ml-sm-1 mt-5">
         <img src="images\paintstroke.png" style="position: absolute;" />
     </div>
 
-    <!-- The about section -->
-    <div class="row mt-lg-5 mt-sm-1">
-        <div class="col-1 mt-5"></div>
-        <div class="col-6 mt-5">
-            <h2>About</h2>
+    <div class="row mt-lg-5 mt-sm-3">
+        <div class="col-1 mt-lg-5 mt-sm-3"></div>
+        <div class="col-6">
+            <h2 class="section-header mt-4">about</h2>
         </div>
     </div>
 
@@ -154,13 +129,14 @@
     <div class="ml-lg-3 ml-sm-1 pt-1">
         <img src="images\paintstroke.png" style="position: absolute;" />
     </div>
-    <div class="row mt-5">
+    <div class="row mt-3">
         <div class="col-1"></div>
         <div class="col-6">
-            <h2>My Work</h2>
+            <h2 class="section-header">my work</h2>
         </div>
     </div>
 
+    <!-- Web pages -->
     <div class="m-5">
         <img src="images\smallstroke.png" style="position: absolute; z-index: -1;" />
     </div>
@@ -171,7 +147,7 @@
 
     <div class="row">
         <div class="col-1"></div>
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5 col-sm-10 ml-lg-3 ml-sm-5">
+        <div class="card p-3 m-3 shadow col-lg-3 col-sm-10 ml-lg-3 ml-sm-5">
             <img src="images/cover_internship.png" class="img-fluid mb-3">
             <h3><strong>Internship - CEM</strong></h3>
             <p class="font-weight-light">
@@ -181,12 +157,12 @@
             <p class="font-italic">
                 Javascript, HTML, C#, SQL, Bootstrap
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#internshipModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#internshipModal">
                 click to view
             </button>
         </div>
 
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5 col-sm-10 ml-lg-3 ml-sm-5">
+        <div class="card p-3 m-3 shadow col-lg-3 col-sm-10 ml-lg-3 ml-sm-5">
             <img src="images/cover_calaveras.png" class="img-fluid mb-3">
             <h3><strong>Calaveras Big Trees</strong></h3>
             <p class="font-weight-light">
@@ -197,12 +173,12 @@
             <p class="font-italic">
                 Javascript, jQuery, HTML, CSS
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#treesModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#treesModal">
                 click to view
             </button>
         </div>
 
-        <div class="card p-3 m-3 shadow col-lg-3 col-md-5 col-sm-10 ml-lg-3 ml-sm-5">
+        <div class="card p-3 m-3 shadow col-lg-3 col-sm-10 ml-lg-3 ml-sm-5">
             <img src="images/cover_train.png" class="img-fluid mb-3" />
             <h3><strong>Purdue Reamer Club</strong></h3>
             <p class="font-weight-light">
@@ -212,12 +188,13 @@
             <p class="font-italic">
                 HTML, CSS, Javascript
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#trainModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#trainModal">
                 click to view
             </button>
         </div>
     </div>
 
+    <!-- Graphic Design -->
     <div class="m-5">
         <img src="images\smallstroke.png" style="position: absolute; z-index: -1;" />
     </div>
@@ -239,12 +216,12 @@
             <p class="font-italic">
                 Adobe Spark, Illustrator, Photoshop
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#corecModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#corecModal">
                 click to view
             </button>
         </div>
 
-        <div class="card p-3 m-3 mb-5 shadow col-lg-3  col-sm-10 ml-lg-3 ml-sm-5">
+        <div class="card p-3 m-3 mb-5 shadow col-lg-3 col-sm-10 ml-lg-3 ml-sm-5">
             <img src="images/cover_logo.png" class="img-fluid mb-3">
             <h3><strong>Infographics and Logos</strong></h3>
             <p class="font-weight-light">
@@ -254,13 +231,13 @@
             <p class="font-italic">
                 Adobe Fresco, Illustrator, Photoshop
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#logoModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#logoModal">
                 click to view
             </button>
         </div>
-        
-        <div class="card p-3 m-3 mb-5 shadow col-lg-3  col-sm-10 ml-lg-3 ml-sm-5">
-            <img src="images/cover_digital.jpg" class="img-fluid mb-3" />
+
+        <div class="card p-3 m-3 mb-5 shadow col-lg-3 col-sm-10 ml-lg-3 ml-sm-5">
+            <img src="images/cover_digital.jpg" class="img-fluid mb-3" /> 
             <h3><strong>Digital Illustration</strong></h3>
             <p class="font-weight-light">
                 Digital Illustration comes as a small hobby of mine. Feel free to browse some sketches I have done while
@@ -269,23 +246,24 @@
             <p class="font-italic">
                 Adobe Fresco, Illustrator, Photoshop
             </p>
-            <button class="btn btn-light font-italic" type="button" data-toggle="modal" data-target="#digitalModal">
+            <button class="btn btn-light font-italic mt-5" type="button" data-toggle="modal" data-target="#digitalModal">
                 click to view
             </button>
         </div>
+        <div class="row m-5 pb-5" ></div>
     </div>
-
-
+    
+   <div class="mb-5 pb-5" id="contact" ></div>
 
     <!-- Contact section -->
 
     <div class="ml-lg-3 ml-sm-1">
         <img src="images\paintstroke.png" style="position: absolute; width:auto" />
     </div>
-    <div class="row mt-5" id="contact">
+    <div class="row mt-5 pt-4" >
         <div class="col-1"></div>
         <div class="col-6">
-            <h2>Contact</h2>
+            <h2 class="section-header">contact</h2>
         </div>
     </div>
     <div class="row">
@@ -295,10 +273,10 @@
             <p class="font-italic">Let's chat...</p>
             <form action="https://formspree.io/xwkrgqno" method="POST">
                 <div class="row">
-                    <div class="col-6 mb-4">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <input type="text" class="form-control" id="firstNameInput" name="firstNameInput" placeholder="FirstName" required>
                     </div>
-                    <div class="col-6 mb-4">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <input type="text" class="form-control" id="lastNameInput" name="lastNameInput" placeholder="LastName" required>
                     </div>
                 </div>
@@ -312,7 +290,7 @@
                         <textarea type="text" class="form-control" id="messageInput" name="messageInput" placeholder="What would you like to work on next?" rows="5" required></textarea>
                     </div>
                 </div>
-                <button class="btn btn-light font-italic col-4" type="submit">
+                <button class="btn btn-light font-italic col-lg-4 col-sm-12" type="submit">
                     submit
                 </button>
             </form>

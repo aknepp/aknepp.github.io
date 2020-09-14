@@ -1,72 +1,12 @@
 ﻿body {
-}
-/*
-.hover-3::after {
-    content: '';
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
-    border: 1px solid #fff;
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    z-index: 90;
-    transition: all 0.3s;
-    transform: scale(1.1);
-    opacity: 0;
-    display: block;
-    opacity: 0;
+
 }
 
-.hover-3-content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    text-align: center;
-    z-index: 99;
-}
-
-.hover-3-description {
-    opacity: 0;
-    transform: scale(1.3);
-    transition: all 0.3s;
-}
-
-.hover-3 img {
-    width: 110%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hover-3 .hover-overlay {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.hover-3:hover img {
-    width: 100%;
-}
-
-.hover-3:hover::after {
-    opacity: 1;
-    transform: none;
-}
-
-.hover-3:hover .hover-3-description {
-    opacity: 1;
-    transform: none;
-}
-
-.hover-3:hover .hover-overlay {
-    background: rgba(0, 0, 0, 0.8);
-}*/
 
 nav{
     background-color: #ffffff;
     opacity: .95;
 }
-
 
 li > a {
     position: relative;
@@ -78,23 +18,29 @@ li > a:hover:{
     color: #BF9595;
     opacity: 0.5;
 }
-
-    li > a::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 8px;
-        bottom: 10px;
-        left: 0;
-        background-color: #BF9595;
-        opacity: 0.5;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
-    }
+li > a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: 10px;
+    left: 0;
+    background-color: #BF9595;
+    opacity: 0.5;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
 
 li > a:hover::before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.section-header {
+    font-family: fairwater-script, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
 }
 
